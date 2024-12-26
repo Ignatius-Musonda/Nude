@@ -1,0 +1,482 @@
+
+
+.landing-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.shipping-banner {
+  width: 100%;
+  background: white;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.desktop-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-right button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-button {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 4px;
+}
+/* Adjusted hero height */
+.hero {
+  height: 80vh; /* Reduced height to 90% of the viewport height */
+  position: relative;
+  overflow: hidden; /* Prevents any overflow */
+}
+
+/* Add some padding to the bottom for smoother transition into next section */
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 16px;
+  padding-bottom: 40px; /* Added bottom padding to make it smoother */
+}
+
+/* Adjusting hero background image to cover the space */
+.hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 16px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.play-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.mobile-menu-content {
+  padding: 16px;
+}
+
+.close-button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  margin-top: 64px;
+}
+
+.menu-items a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 24px 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.social-links img {
+  height: 24px;
+  width: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .nav-left .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+  
+  .desktop-nav.hide {
+    display: none;
+  }
+}
+
+
+
+/* LandingPage.css
+
+.landing-page {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .shipping-banner {
+    width: 100%;
+    background: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  nav {
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1024px) {
+    .menu-button {
+      display: block;
+    }
+    .desktop-nav {
+      display: none;
+    }
+  }
+  
+  .desktop-nav {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .desktop-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .nav-right button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cart-button {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .currency-selector {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 4px;
+  }
+  
+  .hero {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 16px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .play-button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background: white;
+    z-index: 50;
+    overflow-y: auto;
+  }
+  
+  .mobile-menu-content {
+    padding: 16px;
+  }
+  
+  .close-button {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    margin-top: 64px;
+  }
+  
+  .menu-items a {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .divider {
+    height: 1px;
+    background: #eee;
+    margin: 24px 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .social-links img {
+    height: 24px;
+    width: 24px;
+  }
+   */
