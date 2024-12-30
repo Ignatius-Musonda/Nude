@@ -8,6 +8,7 @@ import Interlude from '../interlude/Interlude';
 import Interludesec from '../InterludeSec/Interlude';
 import ProductGrid from '../ProductGrid/ProductGrid';
 import Section from '../Section/Section';
+import StatsAndAwards from '../StatsAndAwards/StatsAndAwards';
 
 
 const LandingPage = () => {
@@ -73,6 +74,7 @@ const LandingPage = () => {
       <Interludesec/>
       <ProductGrid/>
       <Section/>
+      <StatsAndAwards/>
 
       {isMobileMenuOpen && (
         <div className="mobile-menu">
