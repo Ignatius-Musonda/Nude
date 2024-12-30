@@ -1,0 +1,101 @@
+.interlude {
+    padding: 80px 20px;
+    background: white;
+    width: 100%;
+  }
+  
+  .interlude-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .interlude h2 {
+    font-size: 42px;
+    margin-bottom: 24px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .interlude h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .interlude p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .freedom-text {
+    font-size: 18px;
+    color: #333;
+    margin: 32px 0;
+  }
+  
+  .shop-button {
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    padding: 12px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .shop-button:hover {
+    background: #333;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .interlude {
+      padding: 60px 20px;
+    }
+  
+    .interlude h2 {
+      font-size: 32px;
+    }
+  
+    .interlude h3 {
+      font-size: 18px;
+    }
+  
+    .interlude p {
+      font-size: 15px;
+      padding: 0 20px;
+    }
+  
+    .freedom-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .interlude {
+      padding: 40px 15px;
+    }
+  
+    .interlude h2 {
+      font-size: 28px;
+    }
+  
+    .interlude-content {
+      width: 100%;
+    }
+  
+    .shop-button {
+      width: 100%;
+      max-width: 280px;
+    }
+  }

@@ -1,0 +1,129 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.top-section, .bottom-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap */
+  gap: 2rem;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  height: 100%; /* Ensure the image container fills the height */
+}
+
+.main-image {
+  width: 100%;
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensures the image covers the space, cropping if necessary */
+  display: block;
+}
+
+.text-container {
+  flex: 1;
+  text-align: left;
+}
+
+.text-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.text-container .founder {
+  font-weight: bold;
+}
+
+.product-info {
+  flex: 1;
+  text-align: center;
+}
+
+.product-info h4 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.product-info p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.shop-now-button {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+  background-color: #555;
+}
+
+.product-image {
+  flex: 1;
+  height: 100%; /* Ensure the image container fills the height */
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensures the image covers the space, cropping if necessary */
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+  .top-section, .bottom-section {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align content */
+  }
+
+  .image-container, .product-info {
+    flex: none;
+    width: 100%; /* Make images and text take up the full width on smaller screens */
+  }
+
+  .main-image, .product-image img {
+    width: 100%;
+    height: auto; /* Ensure the images are responsive */
+  }
+
+  .text-container {
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  .text-container h1 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .text-container p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .product-info h4, .product-info h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .product-info p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

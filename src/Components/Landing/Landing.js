@@ -5,6 +5,10 @@ import img2 from "../../Images/ln6.png"
 
 import './LandingPage.css';  // Import LandingPage CSS
 import Interlude from '../interlude/Interlude';
+import Interludesec from '../InterludeSec/Interlude';
+import ProductGrid from '../ProductGrid/ProductGrid';
+import Section from '../Section/Section';
+
 
 const LandingPage = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,7 +69,10 @@ const LandingPage = () => {
       </div>
 
       {/* Include the Interlude Component here */}
-      <Interlude /> 
+      {/* <Interlude />  */}
+      <Interludesec/>
+      <ProductGrid/>
+      <Section/>
 
       {isMobileMenuOpen && (
         <div className="mobile-menu">
