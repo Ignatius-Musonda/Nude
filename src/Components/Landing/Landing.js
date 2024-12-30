@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, User, ShoppingBag, Search, Play, ChevronDown } from 'lucide-react';
 import img1 from "../../Images/run.jpg"
-import img2 from "../../Images/ln6.png"
+import img2 from "../../Images/3.png"
 
 import './LandingPage.css';  // Import LandingPage CSS
 import Interlude from '../interlude/Interlude';
@@ -9,6 +9,7 @@ import Interludesec from '../InterludeSec/Interlude';
 import ProductGrid from '../ProductGrid/ProductGrid';
 import Section from '../Section/Section';
 import StatsAndAwards from '../StatsAndAwards/StatsAndAwards';
+import Footer from '../Footer/Footer';
 
 
 const LandingPage = () => {
@@ -75,6 +76,7 @@ const LandingPage = () => {
       <ProductGrid/>
       <Section/>
       <StatsAndAwards/>
+      <Footer/>
 
       {isMobileMenuOpen && (
         <div className="mobile-menu">
