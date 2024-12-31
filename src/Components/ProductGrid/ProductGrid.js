@@ -9,7 +9,7 @@ const ProductGrid = () => {
         <h2>Shop All Styles</h2>
         <p>
           Every pair of soleRebels is handcrafted with sustainable and upcycled
-          materials in our workshop in Addis Ababa, Ethiopia, and shipped free to
+          materials in our workshop in Lusaka, Zambia, and shipped free to
           your door.
         </p>
       </div>

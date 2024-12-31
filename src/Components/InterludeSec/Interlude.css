@@ -1,4 +1,171 @@
+/* Main container */
 .interlude {
+  padding: 80px 20px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centering the content */
+  align-items: center; /* Centering content vertically */
+  box-sizing: border-box; /* Ensure padding does not affect layout */
+}
+
+/* Content wrapper */
+.interlude-content {
+  max-width: 800px;
+
+  margin: 0 ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensuring everything is centered */
+  justify-content: center;
+  box-sizing: border-box; /* Prevents padding from causing overflow */
+  padding: 0 20px; /* Add padding for small screen responsiveness */
+}
+
+/* Headings */
+.interlude h2 {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.interlude h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* Paragraphs */
+.interlude p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0 20px; /* Added padding to avoid tight layout on small screens */
+}
+
+.freedom-text {
+  font-size: 18px;
+  color: #333;
+  margin: 32px 0;
+}
+
+/* Button */
+.shop-button {
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+  padding: 12px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  width: auto;
+  display: inline-block;
+  max-width: 100%; /* Make button flexible */
+  box-sizing: border-box; /* Ensures button fits properly inside its container */
+}
+
+/* Button hover effect */
+.shop-button:hover {
+  background: #333;
+  color: white;
+}
+
+/* Responsive styling for tablets and below (768px) */
+@media (max-width: 768px) {
+  .interlude {
+      padding: 60px 20px;
+  }
+
+  .interlude h2 {
+      font-size: 32px;
+  }
+
+  .interlude h3 {
+      font-size: 18px;
+  }
+
+  .interlude p {
+      font-size: 15px;
+      padding: 0 20px;
+  }
+
+  .freedom-text {
+      font-size: 16px;
+  }
+
+  .shop-button {
+      width: 100%; /* Make button full-width on smaller screens */
+      max-width: 320px; /* Limit max-width */
+      margin-left: auto; 
+      margin-right: auto; /* Center button */
+  }
+}
+
+/* Responsive styling for smaller screens (480px) */
+@media (max-width: 480px) {
+  .interlude {
+      padding: 40px 15px;
+  }
+
+  .interlude h2 {
+      font-size: 28px;
+  }
+
+  .interlude-content {
+      width: 100%;
+      padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .shop-button {
+      width: 100%; /* Full-width button */
+      max-width: 280px;
+      margin-left: auto; 
+      margin-right: auto; /* Ensure the button is centered */
+  }
+}
+
+/* Additional media query for very small screens (e.g., 414px) */
+@media (max-width: 414px) {
+  .interlude {
+    padding: 40px 15px;
+  }
+
+  .interlude h2 {
+    font-size: 24px; /* Smaller heading size for very narrow screens */
+  }
+
+  .interlude-content {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .interlude p {
+    font-size: 14px; /* Slightly smaller text on very small screens */
+    padding: 0 15px; /* Ensure paragraph text doesn't overflow */
+  }
+
+  .shop-button {
+    width: 100%; /* Full-width button */
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* .interlude {
     padding: 80px 20px;
     background: white;
     width: 100%;
@@ -98,4 +265,4 @@
       width: 100%;
       max-width: 280px;
     }
-  }
+  } */

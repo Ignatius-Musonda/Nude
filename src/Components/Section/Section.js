@@ -16,9 +16,9 @@ const Section = () => {
           />
         </div>
         <div className="text-container">
-          <h1>#LIVE.SOLEFULLY</h1>
+          <h1>#LIVE.NUDE</h1>
           <p>
-            From day 1 at soleRebels, we have been reimagining what footwear
+            From day 1 at Nudefeet, we have been reimagining what footwear
             could be, while also reimagining how the lives of the people in our
             community could be elevated by deploying their artisan talents into
             making incredible footwear that would delight people around the
@@ -32,7 +32,7 @@ const Section = () => {
             The result: the world’s finest handmade runners that let us all
             walk, run, train & LIVE. SOLEFULLY.
           </p>
-          <p className="founder">Bethlehem Tilahun Alemu, Founder</p>
+          <p className="founder">Nelson Tongama, Founder</p>
         </div>
       </div>
 
