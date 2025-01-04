@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Search, User } from 'lucide-react';
 // import './home.css';
 import LandingPage from './Components/Landing/Landing';
+import ProductListing from './Pages/ProductListing/ProductListing';
+
 
 
 const App = () => {
@@ -10,6 +12,8 @@ const App = () => {
   return (
     <div className="container">
         <LandingPage/>
+        {/* <ProductListing/> */}
+        
     </div>
   );
 };
