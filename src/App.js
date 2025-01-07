@@ -3,6 +3,7 @@ import { Search, User } from 'lucide-react';
 // import './home.css';
 import LandingPage from './Components/Landing/Landing';
 import ProductListing from './Pages/ProductListing/ProductListing';
+import {Routes,Route,Router} from "react-router-dom"
 
 
 
@@ -10,13 +11,27 @@ const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="container">
-        <LandingPage/>
-        {/* <ProductListing/> */}
-        
-    </div>
+
+    <>
+    <Routes>
+                      <Route path="/productlisting" element={<ProductListing/>}>
+                      
+                       </Route>
+                     
+                      <Route path="/" element={<LandingPage/>}>
+
+                      </Route>
+                      </Routes>
+    </>
+   
   );
 };
+
+// {/* <div className="container">
+//         <LandingPage/>
+//         {/* <ProductListing/> */}
+        
+//     </div> */}
 
 export default App;
 

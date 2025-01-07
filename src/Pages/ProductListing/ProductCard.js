@@ -6,7 +6,7 @@ import img1 from "../../Images/run.jpg"
 
 export const ProductCard = ({ product }) => {
   return (
-    <div className="product-card">
+    <div className="productcardContainer">
       <div className="product-image">
         <img 
           //src={product.image} 

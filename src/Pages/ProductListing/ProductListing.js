@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import { ProductCard } from './ProductCard';
 import { Breadcrumb } from './Breadcrumb';
+import img1 from "../../Images/run.jpg"
 import './ProductListing.css';
+import NavBar from '../../Components/NavBar/NavBar';
+import Footer from '../../Components/Footer/Footer';
+import ScrollToTop from '../../Components/ScrollTop/ScroolTop';
 
 const ProductListing = () => {
   const [products] = useState([
@@ -17,14 +21,22 @@ const ProductListing = () => {
       id: 2,
       name: 'URBAN RUNNER tght',
       color: 'Spike Green',
-      price: 149.99,
+      price: 19.99,
       image: '/api/placeholder/400/300'
     },
     {
       id: 3,
       name: 'URBAN RUNNER tght',
       color: 'Cherry Red',
-      price: 149.99,
+      price: 129.99,
+      image: '/api/placeholder/400/300'
+    }
+    ,
+    {
+      id: 3,
+      name: 'URBAN RUNNER tght',
+      color: 'Cherry Red',
+      price: 109.99,
       image: '/api/placeholder/400/300'
     }
   ]);
@@ -51,8 +63,11 @@ const ProductListing = () => {
   };
 
   return (
-    <div className="container">
-      <Breadcrumb />
+    <>  
+    <ScrollToTop/>
+    <NavBar/>
+        <div className="productcontainer">
+      {/* <Breadcrumb /> */}
       
       <div className="description">
         <p>Every pair of sneakers is lovingly handcrafted with sustainable materials.</p>
@@ -81,6 +96,10 @@ const ProductListing = () => {
         ))}
       </div>
     </div>
+
+    <Footer/>
+    </>
+    
   );
 };
 

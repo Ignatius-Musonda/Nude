@@ -1,24 +1,24 @@
-/* 
-.container {
+
+.productcontainer {
    
     margin: 0 auto;
     padding: 2rem 1rem;
   }
   
-  .description {
+  .productcontainer .description {
     text-align: center;
     margin: 2rem 0;
     color: #333;
     font-size: 1.1rem;
   }
   
-  .sort-container {
+  .productcontainer .sort-container {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
   }
   
-  .sort-select {
+  .productcontainer .sort-select {
     padding: 0.5rem 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -27,7 +27,7 @@
     font-size: 0.9rem;
   }
   
-  .product-grid {
+  .productcontainer .product-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -35,18 +35,18 @@
   }
   
   @media (min-width: 768px) {
-    .product-grid {
+    .productcontainer .product-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (min-width: 1024px) {
-    .product-grid {
+    .productcontainer .product-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-  .product-card {
+  .productcardContainer{
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,19 +55,19 @@
     overflow: hidden;
   }
   
-  .product-card:hover {
+  .productcardContainer:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  .product-image {
+  .productcardContainer .product-image {
     width: 100%;
     aspect-ratio: 1;
     overflow: hidden;
     position: relative;
   }
   
-  .product-image img {
+  .productcardContainer .product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -75,29 +75,29 @@
     transition: transform 0.3s ease;
   }
   
-  .product-card:hover .product-image img {
+  .productcardContainer:hover .product-image img {
     transform: scale(1.05);
   }
   
-  .product-info {
+  .productcardContainer .product-info {
     padding: 1rem;
     text-align: center;
   }
   
-  .product-info h3 {
+  .productcardContainer .product-info h3 {
     margin: 0;
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 600;
   }
   
-  .product-color {
+  .productcardContainer .product-color {
     color: #666;
     margin: 0.5rem 0;
     font-size: 0.9rem;
   }
   
-  .product-price {
+  .productcardContainer .product-price {
     font-weight: 500;
     color: #333;
     margin: 0.5rem 0;
@@ -157,9 +157,9 @@
     }
   }
   
-  .product-card {
+  .productcardContainer {
     animation: fadeIn 0.3s ease-out;
-  } */
+  } 
 
 /* 
 

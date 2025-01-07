@@ -32,7 +32,7 @@ const Section = () => {
             The result: the world’s finest handmade runners that let us all
             walk, run, train & LIVE. SOLEFULLY.
           </p>
-          <p className="founder">Nelson Tongama, Founder</p>
+          <p className="founder">Nelson Ntongama, Founder</p>
         </div>
       </div>
 
