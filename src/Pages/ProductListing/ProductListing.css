@@ -1,4 +1,21 @@
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Ensure the color of links inherit the color from their parent */
+  transition: color 0.2s ease, transform 0.2s ease; /* Smooth transition for color and scaling */
+}
 
+/* Links inside the product cards (for navigation) */
+.productcardContainer a {
+  display: block; /* Make the link cover the entire card */
+  color: inherit; /* Inherit text color */
+  text-decoration: none;
+}
+
+/* Hover state for the product links */
+.productcardContainer a:hover {
+  color: #007bff; /* Change to a blue color on hover */
+  transform: scale(1.05); /* Slightly scale the card for a subtle effect */
+}
 .productcontainer {
    
     margin: 0 auto;

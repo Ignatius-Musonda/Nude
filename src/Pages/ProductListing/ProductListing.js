@@ -1,8 +1,9 @@
+
 // src/components/ProductListing/index.jsx
 import React, { useState } from 'react';
 import { ProductCard } from './ProductCard';
 import { Breadcrumb } from './Breadcrumb';
-import img1 from "../../Images/run.jpg"
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import './ProductListing.css';
 import NavBar from '../../Components/NavBar/NavBar';
 import Footer from '../../Components/Footer/Footer';
@@ -30,10 +31,9 @@ const ProductListing = () => {
       color: 'Cherry Red',
       price: 129.99,
       image: '/api/placeholder/400/300'
-    }
-    ,
+    },
     {
-      id: 3,
+      id: 4,
       name: 'URBAN RUNNER tght',
       color: 'Cherry Red',
       price: 109.99,
@@ -64,9 +64,9 @@ const ProductListing = () => {
 
   return (
     <>  
-    <ScrollToTop/>
-    <NavBar/>
-        <div className="productcontainer">
+    <ScrollToTop />
+    <NavBar />
+    <div className="productcontainer">
       {/* <Breadcrumb /> */}
       
       <div className="description">
@@ -89,21 +89,128 @@ const ProductListing = () => {
 
       <div className="product-grid">
         {getSortedProducts().map((product) => (
-          <ProductCard 
-            key={product.id} 
-            product={product} 
-          />
+          <Link to={`/product}`} > {/* Link to product details page */}
+          {/* <Link to={`/product/${product.id}`} key={product.id}>  */}
+            <ProductCard product={product} />
+          </Link>
         ))}
       </div>
     </div>
 
-    <Footer/>
+    <Footer />
     </>
-    
   );
 };
 
 export default ProductListing;
+
+
+// // src/components/ProductListing/index.jsx
+// import React, { useState } from 'react';
+// import { ProductCard } from './ProductCard';
+// import { Breadcrumb } from './Breadcrumb';
+// import img1 from "../../Images/run.jpg"
+// import './ProductListing.css';
+// import NavBar from '../../Components/NavBar/NavBar';
+// import Footer from '../../Components/Footer/Footer';
+// import ScrollToTop from '../../Components/ScrollTop/ScroolTop';
+
+// const ProductListing = () => {
+//   const [products] = useState([
+//     {
+//       id: 1,
+//       name: 'URBAN RUNNER tght',
+//       color: 'Denim Blue',
+//       price: 149.99,
+//       image: '/api/placeholder/400/300'
+//     },
+//     {
+//       id: 2,
+//       name: 'URBAN RUNNER tght',
+//       color: 'Spike Green',
+//       price: 19.99,
+//       image: '/api/placeholder/400/300'
+//     },
+//     {
+//       id: 3,
+//       name: 'URBAN RUNNER tght',
+//       color: 'Cherry Red',
+//       price: 129.99,
+//       image: '/api/placeholder/400/300'
+//     }
+//     ,
+//     {
+//       id: 3,
+//       name: 'URBAN RUNNER tght',
+//       color: 'Cherry Red',
+//       price: 109.99,
+//       image: '/api/placeholder/400/300'
+//     }
+//   ]);
+
+//   const [sortType, setSortType] = useState('all');
+
+//   const getSortedProducts = () => {
+//     switch (sortType) {
+//       case 'price-asc':
+//         return [...products].sort((a, b) => a.price - b.price);
+//       case 'price-desc':
+//         return [...products].sort((a, b) => b.price - a.price);
+//       case 'name-asc':
+//         return [...products].sort((a, b) => a.name.localeCompare(b.name));
+//       case 'color-asc':
+//         return [...products].sort((a, b) => a.color.localeCompare(b.color));
+//       default:
+//         return products;
+//     }
+//   };
+
+//   const handleSortChange = (e) => {
+//     setSortType(e.target.value);
+//   };
+
+//   return (
+//     <>  
+//     <ScrollToTop/>
+//     <NavBar/>
+//         <div className="productcontainer">
+//       {/* <Breadcrumb /> */}
+      
+//       <div className="description">
+//         <p>Every pair of sneakers is lovingly handcrafted with sustainable materials.</p>
+//       </div>
+
+//       <div className="sort-container">
+//         <select 
+//           className="sort-select"
+//           value={sortType}
+//           onChange={handleSortChange}
+//         >
+//           <option value="all">All</option>
+//           <option value="price-asc">Price: Low to High</option>
+//           <option value="price-desc">Price: High to Low</option>
+//           <option value="name-asc">Name: A to Z</option>
+//           <option value="color-asc">Color: A to Z</option>
+//         </select>
+//       </div>
+
+//       <div className="product-grid">
+//         {getSortedProducts().map((product) => (
+//           <ProductCard 
+//             key={product.id} 
+//             product={product} 
+//           />
+//         ))}
+//       </div>
+//     </div>
+
+//     <Footer/>
+//     </>
+    
+//   );
+// };
+
+// export default ProductListing;
 
 // src/components/ProductListing/ProductCard.jsx
 // import React from 'react';

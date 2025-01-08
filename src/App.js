@@ -4,6 +4,8 @@ import { Search, User } from 'lucide-react';
 import LandingPage from './Components/Landing/Landing';
 import ProductListing from './Pages/ProductListing/ProductListing';
 import {Routes,Route,Router} from "react-router-dom"
+import ProductPage from './Pages/ProductPage/ProductPage';
+
 
 
 
@@ -19,6 +21,9 @@ const App = () => {
                        </Route>
                      
                       <Route path="/" element={<LandingPage/>}>
+
+                      </Route>
+                      <Route path="/product" element={<ProductPage/>}>
 
                       </Route>
                       </Routes>
