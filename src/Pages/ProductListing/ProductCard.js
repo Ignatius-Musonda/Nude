@@ -10,7 +10,7 @@ export const ProductCard = ({ product }) => {
   return (
     <div className="productcardContainer">
       <div className="product-image">
-      <Link to={`/product}`} > 
+      <Link to="/product"> 
         <img 
           //src={product.image} 
           src={img1} 

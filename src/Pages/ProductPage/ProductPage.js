@@ -135,8 +135,11 @@ const ProductPage = () => {
         </div>
       </div>
     </div>
-
-    <Footer/>
+    
+      <div className='footerCover'>
+          <Footer/>
+      </div>
+   
       </>
     
   );

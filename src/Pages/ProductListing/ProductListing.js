@@ -89,7 +89,7 @@ const ProductListing = () => {
 
       <div className="product-grid">
         {getSortedProducts().map((product) => (
-          <Link to={`/product}`} > {/* Link to product details page */}
+          <Link to={"/"} > {/* Link to product details page */}
           {/* <Link to={`/product/${product.id}`} key={product.id}>  */}
             <ProductCard product={product} />
           </Link>
