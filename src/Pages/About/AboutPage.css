@@ -1,0 +1,189 @@
+.about-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .hero-banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+  
+  .hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  
+  .story-section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .story-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #666;
+  }
+  
+  .community-image {
+    margin-bottom: 4rem;
+  }
+  
+  .community-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .ethical-production {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .ethical-content {
+    padding-right: 2rem;
+  }
+  
+  .ethical-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .ethical-text {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .benefit-icon {
+    color: #22c55e;
+    margin-right: 0.75rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .learn-more-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #c2410c;
+  }
+  
+  .ethical-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-banner {
+      height: 300px;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .main-content {
+      padding: 2rem 1rem;
+    }
+  
+    .ethical-production {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .ethical-content {
+      padding-right: 0;
+      order: 2;
+    }
+  
+    .ethical-image {
+      order: 1;
+    }
+  
+    .ethical-image img {
+      height: 300px;
+    }
+  
+    .story-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .story-title {
+      font-size: 1.75rem;
+    }
+  
+    .ethical-title {
+      font-size: 1.5rem;
+    }
+  }

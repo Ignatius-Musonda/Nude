@@ -5,6 +5,7 @@ import LandingPage from './Components/Landing/Landing';
 import ProductListing from './Pages/ProductListing/ProductListing';
 import {Routes,Route,Router} from "react-router-dom"
 import ProductPage from './Pages/ProductPage/ProductPage';
+import AboutPage from './Pages/About/About';
 
 
 
@@ -24,6 +25,9 @@ const App = () => {
 
                       </Route>
                       <Route path="/product" element={<ProductPage/>}>
+
+                      </Route>
+                      <Route path="/about" element={<AboutPage/>}>
 
                       </Route>
                       </Routes>

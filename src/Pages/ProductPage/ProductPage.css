@@ -10,6 +10,7 @@
     /* background-color: red; */
     position: relative;
     height: auto;
+    min-height: 70px;
     /* margin: 20px 0; */
     padding-bottom: 30px;
 }

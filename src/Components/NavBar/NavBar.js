@@ -24,7 +24,7 @@ const NavBar = () => {
           <div className={`desktop-nav ${isMobileMenuOpen ? 'hide' : ''}`}>
             <a href="#">Womens</a>
             <a href="#">Mens</a>
-            <a href="#">Refer A Friend</a>
+            <a href="/">Home</a>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ const NavBar = () => {
             <div className="menu-items">
               <a href="#">Womens</a>
               <a href="#">Mens</a>
-              <a href="#">Refer A Friend</a>
+              <a href="/">Home</a>
               <div className="divider"></div>
               <a href="#">Log in</a>
               <a href="#">Search</a>
